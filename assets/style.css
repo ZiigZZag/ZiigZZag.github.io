@@ -1,0 +1,23 @@
+body {
+    background-color:linear-gradient (orange,blue);
+    color: red;
+}
+
+    h1{color:white;
+    font-size: 152px;
+    font-family:sans-serif;
+    }
+
+    p{
+        color:paleturquoise
+        font-size:224px;
+    }
+    .boite{
+        border: 4px solid red;
+        display:flex;
+    
+    }
+    .boite p{
+        font-size: 50px;
+    }
+    
