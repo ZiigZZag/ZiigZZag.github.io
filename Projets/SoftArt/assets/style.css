@@ -1,0 +1,65 @@
+body {
+  background: linear-gradient(#f69d3c, #3f87a6);
+  height: 100vh;
+}
+
+h1 {
+  color: white;
+  font-size: 152px;
+  font-family: sans-serif;
+}
+
+p {
+  color: paleturquoise;
+  font-size: 224px;
+}
+
+.boite {
+  border: 4px solid red;
+  background-color: white;
+  padding: 40px;
+}
+
+.boite img {
+  margin-bottom: 50px;
+  margin-right: 25px ;
+  width: 100%;
+}
+.boite p {
+ font-size: 20px;
+ padding: 10px;
+}
+
+.paragraphe{
+  font-size: 50px;
+}
+
+
+@font-face {
+  font-family: 'fragment';
+  src: url('font/fragment/ppfragment-textregular.woff2') format('woff2'),
+       url('font/fragment/ppfragment-textregular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+h1 {
+  font-family: "fragment", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 240px;
+}
+
+a {
+  background-color: white;
+  text-decoration: none;
+  font-size: 45px;
+  padding: 10px;
+  border: 1px solid black;
+  color: #f69d3c;
+  font-family: sans-serif;
+}
+
+a:hover {
+  background-color: #f69d3c;
+  color: #3f87a6;
+}
