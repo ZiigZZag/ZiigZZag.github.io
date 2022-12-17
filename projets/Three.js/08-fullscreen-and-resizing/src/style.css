@@ -1,0 +1,22 @@
+/* body
+{background: red;
+} */
+
+/* {
+margin:0;
+pardding0;
+} */
+
+html,
+body 
+{
+    overflow:hidden;
+}
+
+.webgl
+
+{position: fixed;
+top:0;
+left:0;
+outline: none;
+}

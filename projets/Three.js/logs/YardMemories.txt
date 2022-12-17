@@ -1,0 +1,59 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. Tous droits réservés.
+
+Testez le nouveau système multiplateforme PowerShell https://aka.ms/pscore6
+
+PS H:\TRAVAIL\AMU\MASTER\WEB\Three.js\three-loader-master> yarn
+yarn install v1.22.19
+[1/4] Resolving packages...
+[2/4] Fetching packages...
+[3/4] Linking dependencies...
+[4/4] Building fresh packages...
+Done in 26.18s.
+PS H:\TRAVAIL\AMU\MASTER\WEB\Three.js\three-loader-master> yarn start:example
+yarn run v1.22.19
+$ webpack-dev-server --config webpack.config.example.js --mode development --progress
+10% building 1/1 modules 0 activei ｢wds｣: Project is running at http://localhost:5000/
+i ｢wds｣: webpack output is served from /
+i ｢wds｣: Content not from webpack is served from H:\TRAVAIL\AMU\MASTER\WEB\Three.js\three-loader-master\build
+10% building 1/2 modules 1 active H:\TRAVAIL\AMU\MASTER\WEB\Three.js\three-loader-master\node_modules\webpack-dev-server\client\index.js?http://localhost:5000Error: error:0308010C:digital envelope routines::unsupported
+    at new Hash (node:internal/crypto/hash:71:19)
+    at Object.createHash (node:crypto:133:10)
+    at module.exports (H:\TRAVAIL\AMU\MASTER\WEB\Three.js\three-loader-master\node_modules\webpack\lib\util\createHash.js:135:53)
+    at NormalModule._initBuildHash (H:\TRAVAIL\AMU\MASTER\WEB\Three.js\three-loader-master\node_modules\webpack\lib\NormalModule.js:417:16)
+    at handleParseError (H:\TRAVAIL\AMU\MASTER\WEB\Three.js\three-loader-master\node_modules\webpack\lib\NormalModule.js:471:10)
+    at H:\TRAVAIL\AMU\MASTER\WEB\Three.js\three-loader-master\node_modules\webpack\lib\NormalModule.js:503:5
+    at H:\TRAVAIL\AMU\MASTER\WEB\Three.js\three-loader-master\node_modules\webpack\lib\NormalModule.js:358:12
+    at H:\TRAVAIL\AMU\MASTER\WEB\Three.js\three-loader-master\node_modules\loader-runner\lib\LoaderRunner.js:373:3
+    at iterateNormalLoaders (H:\TRAVAIL\AMU\MASTER\WEB\Three.js\three-loader-master\node_modules\loader-runner\lib\LoaderRunner.js:214:10)
+    at iterateNormalLoaders (H:\TRAVAIL\AMU\MASTER\WEB\Three.js\three-loader-master\node_modules\loader-runner\lib\LoaderRunner.js:221:10)
+                  ^
+
+Error: error:0308010C:digital envelope routines::unsupported
+    at new Hash (node:internal/crypto/hash:71:19)
+    at Object.createHash (node:crypto:133:10)
+    at module.exports (H:\TRAVAIL\AMU\MASTER\WEB\Three.js\three-loader-master\node_modules\webpack\lib\util\createHash.js:135:53)
+    at NormalModule._initBuildHash (H:\TRAVAIL\AMU\MASTER\WEB\Three.js\three-loader-master\node_modules\webpack\lib\NormalModule.js:417:16)
+    at handleParseError (H:\TRAVAIL\AMU\MASTER\WEB\Three.js\three-loader-master\node_modules\webpack\lib\NormalModule.js:471:10)
+    at H:\TRAVAIL\AMU\MASTER\WEB\Three.js\three-loader-master\node_modules\webpack\lib\NormalModule.js:503:5
+    at H:\TRAVAIL\AMU\MASTER\WEB\Three.js\three-loader-master\node_modules\webpack\lib\NormalModule.js:358:12
+    at H:\TRAVAIL\AMU\MASTER\WEB\Three.js\three-loader-master\node_modules\loader-runner\lib\LoaderRunner.js:373:3
+    at iterateNormalLoaders (H:\TRAVAIL\AMU\MASTER\WEB\Three.js\three-loader-master\node_modules\loader-runner\lib\LoaderRunner.js:214:10)
+    at Array.<anonymous> (H:\TRAVAIL\AMU\MASTER\WEB\Three.js\three-loader-master\node_modules\loader-runner\lib\LoaderRunner.js:205:4) {
+  opensslErrorStack: [ 'error:03000086:digital envelope routines::initialization error' ],
+  library: 'digital envelope routines',
+  reason: 'unsupported',
+  code: 'ERR_OSSL_EVP_UNSUPPORTED'
+}
+
+Node.js v18.12.1
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+PS H:\TRAVAIL\AMU\MASTER\WEB\Three.js\three-loader-master> $env:NODE_OPTIONS = "--openssl-legacy-provider"
+PS H:\TRAVAIL\AMU\MASTER\WEB\Three.js\three-loader-master> yarn start:example
+yarn run v1.22.19
+$ webpack-dev-server --config webpack.config.example.js --mode development --progress
+10% building 1/1 modules 0 activei ｢wds｣: Project is running at http://localhost:5000/
+i ｢wds｣: webpack output is served from /
+i ｢wds｣: Content not from webpack is served from H:\TRAVAIL\AMU\MASTER\WEB\Three.js\three-loader-master\build
+i ｢wdm｣: Compiled successfully.
