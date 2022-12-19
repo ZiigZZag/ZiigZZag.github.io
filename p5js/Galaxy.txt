@@ -1,0 +1,46 @@
+let num = 1000;
+let vL = []; 
+let vV = [];
+
+function setup() {
+  createCanvas(1000, 1000);
+  frameRate(60);
+  background(0);
+  for (let i = 0; i < num; i++){
+  vL[i] = createVector((random(200,800)),(random(200,800)));
+  vV[i] = createVector(random(-20, 20), random(-20, 20));}
+
+ noStroke();
+ fill(random(255), random(255), random(255));
+ let diameter1 = random(6);
+ for (let i = 0; i < num; i++) {
+ vL[i].add(vV[i]);
+  ellipse(vL[i].x, vL[i].y , diameter1, diameter1);
+  if (vL[i].x < 200 || vL[i].x > 800) {
+  vV[i].x = vV[i].x * -1;
+}
+if (vL[i].y < 200 || vL[i].y > 800) {
+vV[i].y = vV[i].y * -1;
+  if (diameter1<3); {fill(random(255), random(255), random(255),random(255))}
+}}
+}
+	
+function draw() {
+num = 250;	
+if (mouseIsPressed == true) {
+noStroke();
+ fill(random(255), random(255), random(255));
+ let diameter1 = random(6);
+ for (let i = 0; i < num; i++) {
+ vL[i].add(vV[i]);
+  ellipse(vL[i].x, vL[i].y , diameter1, diameter1);
+  if (vL[i].x < 200 || vL[i].x > 800) {
+  vV[i].x = vV[i].x * -1;
+}
+if (vL[i].y < 200 || vL[i].y > 800) {
+vV[i].y = vV[i].y * -1;
+  if (diameter1<3); {fill(random(255), random(255), random(255),random(255))}
+}}	
+}
+	
+}
